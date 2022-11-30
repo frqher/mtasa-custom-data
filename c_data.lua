@@ -28,5 +28,7 @@ end)
 
 addEvent("data:sil", true)
 addEventHandler("data:sil", root, function(oyuncu)
-    datalar[oyuncu] = nil
+    if datalar[oyuncu] ~= nil then
+        datalar[oyuncu] = nil
+    end
 end)
