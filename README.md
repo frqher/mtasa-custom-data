@@ -9,10 +9,10 @@ Having less context switching (IE less calls between Lua and C++) is generally s
 setElementData()
 
 ```lua
-exports.data:dataEkle( element theElement, string key, var value [, bool synchronize = true ] )
+exports.data:dataSet( element theElement, string key, var value [, bool synchronize = true ] )
 
 -- Example
-exports.data:dataEkle(player, "Money", 8000, true)
+exports.data:dataSet(player, "Money", 8000, true)
 ```
 
 getElementData()
