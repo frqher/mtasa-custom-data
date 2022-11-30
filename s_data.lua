@@ -27,6 +27,8 @@ addEventHandler("data:snc", root, function(oyuncu, data, deger)
 end)
 
 addEventHandler("onPlayerQuit", root, function()
-    datalar[source] = nil
-    triggerClientEvent(root, "data:sil", root, source)
+    if datalar[source] ~= nil then
+        datalar[source] = nil
+        triggerClientEvent(root, "data:sil", root, source)
+    end
 end)
