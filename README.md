@@ -17,7 +17,7 @@ exports.data:dataEkle(player, "Money", 8000, true)
 
 getElementData()
 ```lua
-local money = exports.data:dataGet(element theElement, string key [, bool inherit = true])
+local money = exports.data:dataGet(element theElement, string key)
 
 -- Example
 local money = exports.data:dataGet(player, "Money")
